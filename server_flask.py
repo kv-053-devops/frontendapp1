@@ -33,7 +33,8 @@ additional_data = None
 
 def receive_data_for_table( list_of_symbol=None ):
     path_online_data="https://api.worldtradingdata.com/api/v1/stock"
-    params_online_data_default = "?symbol=MSFT,AAPL,FB,GOOGL,AMZN&api_token=a5bU3AxoLKNcgBMMSqVJoLRYvPhyw6l2J55ucjjk2GQ9sTxT0t7YI8FdkxBo"
+#     params_online_data_default = "?symbol=MSFT,AAPL,FB,GOOGL,AMZN&api_token=a5bU3AxoLKNcgBMMSqVJoLRYvPhyw6l2J55ucjjk2GQ9sTxT0t7YI8FdkxBo"
+    params_online_data_default = "?symbol=MSFT,AAPL,FB,GOOGL,AMZN&api_token=MOMTo8JMnz1nM83wWeExwGFer9kndmyJD6LFyOF0rNkVixUTSzOj45Wkhvf0"
     if list_of_symbol is None or not isinstance(list_of_symbol, list):
         list_of_symbol = list_of_symbol_default
     try:

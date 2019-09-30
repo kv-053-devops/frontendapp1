@@ -96,8 +96,6 @@ metadata:
 spec:
   hosts:
   - "*"
-  gateways:
-  - frontendapp-gateway
   http:
   - match:
     - uri:

@@ -165,7 +165,7 @@ def settings():
 
 @app.route('/hello')
 def hello_world():
-    return 'Task for flask-StockApp'
+    return 'Task for flask-StockApp-v2'
 
 
 @app.route('/api/add', methods=['POST'])

@@ -22,7 +22,7 @@ spec:
       hostname: frontendapp
       containers:
       - name: frontendapp
-        image: eu.gcr.io/softs0309/frontendapp:54b4028
+        image: eu.gcr.io/$PROJECT_ID/frontendapp:$SHORT_SHA
         ports:
         - containerPort: 5001
         env:

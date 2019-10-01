@@ -78,6 +78,7 @@ apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
   name: frontendapp
+  namespace: dev
 spec:
   host: frontendapp-main
   subsets:
@@ -96,6 +97,8 @@ metadata:
 spec:
   hosts:
   - "*"
+  gateways:
+  - frontendapp-gateway
   http:
   - match:
     - uri:

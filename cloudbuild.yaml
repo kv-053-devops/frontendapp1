@@ -49,7 +49,7 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gsutil'
   id: Push dev K8 manifest to GS bucket
-  args: ['cp','ready_kub_dev*.yaml','gs://$PROJECT_ID-spinnaker-conf/frontendapp/']
+  args: ['cp','ready_kub*.yaml','gs://$PROJECT_ID-spinnaker-conf/frontendapp/']
 
 artifacts:
   objects:

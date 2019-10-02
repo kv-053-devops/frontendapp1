@@ -32,16 +32,15 @@ steps:
     - 'PROJECT_ID=$PROJECT_ID'
     - 'SHORT_SHA=$SHORT_SHA'
 
-
 - name: 'comarada/envsubst'
-  id: Prepare dev enviroment file canary
+  id: Prepare main enviroment file canary
   args: ['kub_prod_canary.yaml']
   env:
     - 'PROJECT_ID=$PROJECT_ID'
     - 'SHORT_SHA=$SHORT_SHA'
 
 - name: 'comarada/envsubst'
-  id: Prepare dev enviroment file main
+  id: Prepare main enviroment file main
   args: ['kub_prod_main.yaml']
   env:
     - 'PROJECT_ID=$PROJECT_ID'
